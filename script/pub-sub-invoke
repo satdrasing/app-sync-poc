@@ -1,0 +1,23 @@
+wss://<APPSYNC_REALTIME_ENDPOINT>/event/realtime
+
+{
+    "type": "subscribe",
+    "id": "ee849ef0-cf23-4cb8-9fcb-152ae4fd1e69-8989",
+    "channel": "/default/test",
+    "authorization": {
+        "x-api-key": "<KEY>",
+        "host": "<APPSYNC_ENDPOINT>"
+    }
+}
+
+
+POST https://<APPSYNC_ENDPOINT>/event
+
+{
+    "channel": "default/test",
+    "events": [
+        "{\"event_1\":\"data_2\"}",
+        "{\"event_2\":\"data_2\"}",
+        "{\"event_2\":\"data_2\"}"
+    ]
+}

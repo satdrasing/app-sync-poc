@@ -1,0 +1,37 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  event-function
+
+  Sample SAM Template for event-function
+  
+Globals:
+  Function:
+    Timeout: 3
+
+Resources:
+  EventSenderFunction:
+    Type: AWS::Serverless::Function 
+    Properties:
+      CodeUri: event-sender/
+      Handler: app.lambdaHandler
+      Runtime: nodejs22.x
+      Architectures:
+        - x86_64
+      Events:
+        HelloWorld:
+          Type: Api 
+          Properties:
+            Path: /hello
+            Method: get
+
+Outputs:
+  MyApi:
+    Description: "API Gateway endpoint URL for Prod stage for Hello World function"
+    Value: !Sub "https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/hello/"
+  EventSenderFunction:
+    Description: "Hello World Lambda Function ARN"
+    Value: !GetAtt EventSenderFunction.Arn
+  EventSenderFunctionIamRole:
+    Description: "Implicit IAM Role created for Hello World function"
+    Value: !GetAtt EventSenderFunctionRole.Arn
