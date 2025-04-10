@@ -1,0 +1,17 @@
+{
+  "authorizationToken": "1212",
+  "requestContext": {
+      "apiId": "siytpkqw3nfqbnzkodlyo3m2p4",
+      "accountId": "471112622146",
+      "requestId": "2dc782fa-f4f4-48e9-bd29-078998357fad",
+      "operation": "EVENT_CONNECT"
+  },
+  "requestHeaders": {
+      "authorization": "1212",
+      "content-length": "2",
+      "accept-encoding": "gzip",
+      "x-forwarded-proto": "https",
+      "host": "2i7oait3xbbsbea3azwnrpzg5e.appsync-api.ap-south-1.amazonaws.com",
+      "x-forwarded-port": "443"
+  }
+}

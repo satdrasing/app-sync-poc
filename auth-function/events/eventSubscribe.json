@@ -1,0 +1,22 @@
+{
+    "authorizationToken": "1212",
+    "requestContext": {
+        "apiId": "siytpkqw3nfqbnzkodlyo3m2p4",
+        "accountId": "471112622146",
+        "requestId": "f2893470-4a20-4768-a869-91a7edc42187",
+        "operation": "EVENT_SUBSCRIBE",
+        "channelNamespaceName": "default",
+        "channel": "/default/*"
+    },
+    "requestHeaders": {
+        "x-forwarded-for": "49.207.201.33",
+        "authorization": "1212",
+        "content-length": "23",
+        "accept-encoding": "gzip",
+        "x-forwarded-proto": "https",
+        "host": "2i7oait3xbbsbea3azwnrpzg5e.appsync-api.ap-south-1.amazonaws.com",
+        "user-agent": "Mozilla/5.0 (X11; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0",
+        "origin": "https://ap-south-1.console.aws.amazon.com",
+        "x-forwarded-port": "443"
+    }
+}
